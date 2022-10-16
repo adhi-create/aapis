@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+var cors = require('cors');
 
 
 app.get ('/',(req,res)=>{
@@ -23,6 +24,11 @@ const products =[
 
     
 ]
+
+
+app.use(cors({
+    origin: 'http://localhost:5000/products'
+}));
 
 
 
