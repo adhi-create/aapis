@@ -26,7 +26,7 @@ const products =[
 
 
 app.use(cors({
-    origin: '*'
+    origin: 'process.env.PORT'
 }));
 
 
