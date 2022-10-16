@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-var cors = require('cors');
+
 
 app.get ('/',(req,res)=>{
     res.send('<h1>hello</h1>')
@@ -24,10 +24,6 @@ const products =[
     
 ]
 
-
-app.use(cors({
-    origin: 'process.env.PORT'
-}));
 
 
 app.get ('/products',(req,res)=>{
